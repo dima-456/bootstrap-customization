@@ -2,12 +2,16 @@
 
 /* Hero Section */
 .hero-section {
-    background: var(--bs-primary-bg-subtle);
+    background: black;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+}
+
+.bg-light {
+    background-color: red;
 }
 
 .hero-section h1 {
