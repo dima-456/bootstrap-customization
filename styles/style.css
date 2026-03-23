@@ -1,8 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+:root {
+    --bg-color: #E7FAFF;
+    --text-color: #423E3B;
+    --highlight-color-one: #FCA311;
+    --highlight-color-two: #EC0B43;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
 
 /* Hero Section */
 .hero-section {
-    background: black;
+    background: url('https://images.unsplash.com/photo-1506466010722-395aa2bef877?q=80&w=2830&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: 50% 50%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,6 +31,11 @@
 
 .hero-section h1 {
     font-weight: 700;
+    font-family: 'Uncial Antiqua', cursive;
+}
+
+h2, h3, h4, h5 {
+  font-family: 'Uncial Antiqua', cursive;  
 }
 
 .hero-section .lead {
@@ -26,9 +46,69 @@
     height: 300px;
     object-fit: cover;
     border-radius: 0;
+    margin-bottom: 1rem;
 }
 
-h2 {
-    font-weight: 700;
-    color: #333;
+.work-card {
+    font-family: "Nunito", sans-serif;
+    border-radius: 0px;
+    border: none;
+    background: transparent;
+    margin: 1rem;
+}
+
+.work-card .card-title {
+    font-size: 3em;
+}
+
+.work-card .card-body {
+    padding: 0;
+    background-color: transparent;
+}
+
+.btn {
+    border: 2px solid var(--highlight-color-two);
+    color: var(--highlight-color-two);
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: transparent;
+    transition: 1s all;
+}
+
+.btn:hover {
+    background-color: var(--highlight-color-two);
+    color: var(--bg-color);
+    border: 2px solid var(--highlight-color-two);
+    transition: 1s all;
+}
+
+.modal-header {
+    border-bottom: none;
+    background: tran;
+}
+
+.modal img {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.modal h2 {
+    font-size: 3rem;
+}
+
+.modal button.close {
+    max-width: 100px;
+    margin-right: 0;
+    text-align: right;
+}
+
+.modal.show {
+    padding: 0;
+    margin: 0;
+
 }
